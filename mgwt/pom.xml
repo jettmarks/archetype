@@ -6,7 +6,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jettmarks.sample</groupId>
-  <artifactId>mgwt</artifactId>
+  <artifactId>mGWT</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>GWT Maven Archetype</name>
@@ -15,7 +15,7 @@
     <!-- Convenience property to set the GWT version -->
     <gwtVersion>2.7.0</gwtVersion>
 
-    <!-- GWT needs at least java 1.6 -->
+    <!-- GWT 2.7.x needs at least java 1.7 -->
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
 
@@ -92,6 +92,8 @@
           </modules>
         </configuration>
       </plugin>
+      <!-- Provides for maven-controlled deployment; config should match 
+           server setup in settings.xml -->
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
         <artifactId>tomcat7-maven-plugin</artifactId>
